@@ -59,7 +59,20 @@ or Register to add create your own profile."
 
     </androidx.appcompat.widget.AppCompatImageView>
 
-    <Button
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/catgirl"
+        app:layout_constraintBottom_toTopOf="@+id/imgmaskID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subheadingID"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
 
         android:id="@+id/lgbt1"
         android:layout_width="match_parent"
@@ -68,20 +81,21 @@ or Register to add create your own profile."
         android:layout_marginTop="16dp"
 
         android:layout_marginRight="16dp"
-        android:background="@drawable/shapebtn"
+        android:background="@drawable/bordershape"
+
 
         android:padding="16dp"
         android:shadowRadius="4"
         android:text="login"
-        android:textColor="#51B0ED"
+        android:textColor="#6EECC7"
         app:circularflow_radiusInDP="12dp"
         app:layout_constraintStart_toStartOf="@id/imgmaskID"
 
         app:layout_constraintTop_toBottomOf="@id/imgmaskID">
 
-    </Button>
+    </androidx.appcompat.widget.AppCompatButton>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,13 +104,13 @@ or Register to add create your own profile."
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/shape"
-
+        android:textColor="@color/white"
         android:padding="16dp"
         android:text="signup"
         app:layout_constraintStart_toStartOf="@id/lgbt1"
         app:layout_constraintTop_toBottomOf="@id/lgbt1">
 
-    </Button>
+    </androidx.appcompat.widget.AppCompatButton>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/usernavid"
