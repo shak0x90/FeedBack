@@ -89,7 +89,7 @@ or Register to add create your own profile."
 
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
-        android:background="#51B0ED"
+        android:background="@drawable/shape"
 
         android:padding="16dp"
         android:text="signup"
