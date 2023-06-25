@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/headingExploreID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore"
+        android:textSize="24dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="22dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".06" />
+
+
+
+    <ImageView
+        android:id="@+id/notificatonlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="6dp"
+        android:src="@drawable/strokeone"
+        android:layout_marginRight="19dp"
+
+        app:layout_constraintEnd_toStartOf="@id/logo2"
+        app:layout_constraintTop_toTopOf="@+id/headingExploreID">
+
+
+    </ImageView>
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/notificatonlogo"
+        app:layout_constraintTop_toTopOf="@id/glTwo"
+        app:layout_constraintBottom_toTopOf="@id/glOne"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/circlepasteclr"
+        android:layout_width="11dp"
+        android:layout_height="11dp">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="6dp"
+        android:src="@drawable/vector"
+        android:layout_marginRight="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headingExploreID">
+
+    </ImageView>
+    <TextView
+
+        app:layout_constraintBottom_toTopOf="@id/glOne"
+        app:layout_constraintTop_toTopOf="@id/glTwo"
+        app:layout_constraintStart_toStartOf="@id/logo2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="2"
+        android:textSize="8sp"
+        android:background="@drawable/circleshape"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="14dp"
+        android:layout_width="13dp"
+        android:layout_height="13dp">
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/imagelocationLogoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        app:layout_constraintHorizontal_bias="0.04"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headingExploreID">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/locationtextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mirpur 1,Dhaka,Bangladesh"
+        app:layout_constraintHorizontal_bias="0.162"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headingExploreID">
+
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchvCardId"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+
+        android:textAlignment="center"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintDimensionRatio="6.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintStart_toStartOf="@+id/imagelocationLogoId"
+        app:layout_constraintTop_toBottomOf="@id/locationtextId">
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/search"
+            android:hint="Search Service and Products"
+            android:textAlignment="viewEnd"
+            android:textStyle="normal"
+
+
+            >
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        app:cardCornerRadius="10dp"
+        app:layout_constraintDimensionRatio="1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/logo2"
+        app:layout_constraintTop_toTopOf="@id/searchvCardId">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/vectorbserach">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="@id/searchvCardId"
+        app:layout_constraintTop_toBottomOf="@id/searchvCardId"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+            <TextView
+
+                android:id="@+id/oursercesId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_bias=".01"
+                android:text="Our services"
+                android:textFontWeight="700"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/viewpagerid"
+                app:layout_constraintTop_toBottomOf="@id/viewpagerid">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintHorizontal_bias=".01"
+                android:id="@+id/recylerView1"
+                app:layout_constraintTop_toBottomOf="@id/oursercesId"
+                app:layout_constraintStart_toStartOf="@id/viewpagerid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/texvTopRated"
+                app:layout_constraintStart_toStartOf="@id/recylerView1"
+                app:layout_constraintTop_toBottomOf="@id/recylerView1"
+                app:layout_constraintEnd_toEndOf="@id/recylerView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Rated"
+                android:textFontWeight="700"
+                android:textSize="20dp"
+                android:textStyle="bold"
+               android:textAlignment="viewStart"
+                app:layout_constraintHorizontal_bias=".01"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/seealtextvID"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/texvTopRated"
+                app:layout_constraintTop_toBottomOf="@id/recylerView1"
+                app:layout_constraintEnd_toEndOf="@id/recylerView1"
+                android:text="See all"
+                android:textColor="#51B0ED"
+                app:layout_constraintHorizontal_bias=".96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintHorizontal_bias=".01"
+                android:id="@+id/recylerView2"
+                app:layout_constraintTop_toBottomOf="@id/texvTopRated"
+                app:layout_constraintStart_toStartOf="@id/texvTopRated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/NewsetTvID"
+                app:layout_constraintStart_toStartOf="@id/recylerView2"
+                app:layout_constraintTop_toBottomOf="@id/recylerView2"
+                app:layout_constraintEnd_toEndOf="@id/recylerView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Newset"
+                android:textFontWeight="700"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="viewStart"
+                app:layout_constraintHorizontal_bias=".01"
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/seealtextvID2"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/NewsetTvID"
+                app:layout_constraintTop_toBottomOf="@id/recylerView2"
+                app:layout_constraintEnd_toEndOf="@id/recylerView2"
+                android:text="See all"
+                android:textColor="#51B0ED"
+                app:layout_constraintHorizontal_bias=".96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintHorizontal_bias=".01"
+                android:id="@+id/recylerView3"
+                app:layout_constraintTop_toBottomOf="@id/NewsetTvID"
+                app:layout_constraintStart_toStartOf="@id/NewsetTvID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
