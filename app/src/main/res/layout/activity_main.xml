@@ -151,9 +151,17 @@
 
     <ScrollView
         app:layout_constraintTop_toBottomOf="@id/searchvCardId"
+        app:layout_constraintStart_toStartOf="@id/searchvCardId"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         >
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerSlidrId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager2.widget.ViewPager2>
 
     </ScrollView>
 
