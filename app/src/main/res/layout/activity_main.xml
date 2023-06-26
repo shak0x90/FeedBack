@@ -7,15 +7,14 @@
     tools:context=".MainActivity">
 
 
-
-
-
     <TextView
+        android:id="@+id/headingExploreID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Explore"
         android:textSize="24dp"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -27,12 +26,13 @@
         android:id="@+id/notificatonlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="696dp"
+
+        android:layout_marginTop="6dp"
         android:src="@drawable/strokeone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        android:layout_marginRight="19dp"
+
+        app:layout_constraintEnd_toStartOf="@id/logo2"
+        app:layout_constraintTop_toTopOf="@+id/headingExploreID">
 
     </ImageView>
 
@@ -40,89 +40,133 @@
         android:id="@+id/logo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="696dp"
-        android:src="@drawable/vector"
-        app:layout_constraintBottom_toBottomOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.922"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/vector"
+        android:layout_marginRight="26dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headingExploreID">
 
     </ImageView>
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/headingExploreID"
 
+        app:layout_constraintStart_toStartOf="@id/logo2"
+        android:text="2"
+        android:background="@drawable/circleshape"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-
+    </TextView>
 
 
     <ImageView
+        android:id="@+id/imagelocationLogoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="664dp"
-        android:src="@drawable/locaton"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/location"
         app:layout_constraintHorizontal_bias="0.04"
+
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headingExploreID">
 
     </ImageView>
 
     <TextView
+        android:id="@+id/locationtextId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="664dp"
         android:text="Mirpur 1,Dhaka,Bangladesh"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.162"
+
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headingExploreID">
+
 
     </TextView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="592dp"
+        android:id="@+id/searchvCardId"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+
         android:textAlignment="center"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintDimensionRatio="6.4"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
 
-        <com.google.android.material.textfield.TextInputEditText
+        app:layout_constraintStart_toStartOf="@+id/imagelocationLogoId"
+        app:layout_constraintTop_toBottomOf="@id/locationtextId">
+
+        <EditText
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="8dp"
-            android:drawableLeft="@drawable/baseline_search_24"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/search"
             android:hint="Search Service and Products"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.092"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            android:textAlignment="viewEnd"
+            android:textStyle="normal"
 
-        </com.google.android.material.textfield.TextInputEditText>
+
+            >
+
+        </EditText>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="60dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="82dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
         app:cardCornerRadius="10dp"
+        app:layout_constraintDimensionRatio="1"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/logo2"
+        app:layout_constraintTop_toTopOf="@id/searchvCardId">
+
         <ImageView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/vectorbserach"
             android:layout_gravity="center"
-            >
+            android:src="@drawable/vectorbserach">
 
         </ImageView>
 
     </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/searchvCardId"
+        app:layout_constraintStart_toStartOf="@id/searchvCardId"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerSlidrId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+    </ScrollView>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
