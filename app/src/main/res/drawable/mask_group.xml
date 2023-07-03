@@ -14,7 +14,7 @@
           android:pathData="M-92,-76h374.46v374.46h-374.46z"/>
       <path
           android:pathData="M-92,-76h374.47v374.47h-374.47z"
-          android:fillColor="url(#pattern0)"/>
+          />
       <group>
         <clip-path
             android:pathData="M-12,147h68.18v66.93h-68.18z"/>

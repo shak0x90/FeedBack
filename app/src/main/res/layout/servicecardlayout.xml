@@ -64,7 +64,7 @@
 
 
                 android:textSize="15px"
-                app:layout_constraintStart_toEndOff=""
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pet Sitting"

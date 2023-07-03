@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/norificationscreenId"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Notifications"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textFontWeight="700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        >
+
+    </ImageView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/NewsetTvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:textColor="#51B0ED"
+       android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Newest"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newsetReclerVid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/notificaionslidercard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewsetTvId" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/previoustTvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:textColor="#6EECC7"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Previous"
+        app:layout_constraintTop_toBottomOf="@+id/newsetReclerVid"
+        >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/previousRcVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/notificaionslidercard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previoustTvId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

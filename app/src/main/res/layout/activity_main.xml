@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
 
+
     <TextView
         android:id="@+id/headingExploreID"
         android:layout_width="wrap_content"
@@ -41,7 +42,7 @@
         android:id="@+id/notificatonlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:clickable="true"
         android:layout_marginTop="6dp"
         android:src="@drawable/strokeone"
         android:layout_marginRight="19dp"
@@ -183,142 +184,139 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/searchvCardId"
         app:layout_constraintTop_toBottomOf="@id/searchvCardId"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintVertical_bias="0.758">
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:padding="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="16dp">
 
 
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpagerid"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewpagerid"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
-
-        </androidx.viewpager2.widget.ViewPager2>
+            </androidx.viewpager2.widget.ViewPager2>
 
             <TextView
 
                 android:id="@+id/oursercesId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintHorizontal_bias=".01"
                 android:text="Our services"
                 android:textFontWeight="700"
                 android:textSize="20dp"
                 android:textStyle="bold"
-
                 app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias=".01"
                 app:layout_constraintStart_toStartOf="@id/viewpagerid"
                 app:layout_constraintTop_toBottomOf="@id/viewpagerid">
 
             </TextView>
 
             <androidx.recyclerview.widget.RecyclerView
-                app:layout_constraintHorizontal_bias=".01"
                 android:id="@+id/recylerView1"
-                app:layout_constraintTop_toBottomOf="@id/oursercesId"
-                app:layout_constraintStart_toStartOf="@id/viewpagerid"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_bias=".01"
+                app:layout_constraintStart_toStartOf="@id/viewpagerid"
+                app:layout_constraintTop_toBottomOf="@id/oursercesId"
+                tools:listitem="@layout/servicecardlayout">
 
             </androidx.recyclerview.widget.RecyclerView>
 
             <TextView
                 android:id="@+id/texvTopRated"
-                app:layout_constraintStart_toStartOf="@id/recylerView1"
-                app:layout_constraintTop_toBottomOf="@id/recylerView1"
-                app:layout_constraintEnd_toEndOf="@id/recylerView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Top Rated"
+                android:textAlignment="viewStart"
                 android:textFontWeight="700"
                 android:textSize="20dp"
                 android:textStyle="bold"
-               android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="@id/recylerView1"
                 app:layout_constraintHorizontal_bias=".01"
-                >
+                app:layout_constraintStart_toStartOf="@id/recylerView1"
+                app:layout_constraintTop_toBottomOf="@id/recylerView1">
 
             </TextView>
+
             <TextView
                 android:id="@+id/seealtextvID"
-                android:gravity="center"
-                android:textAlignment="center"
-                app:layout_constraintStart_toEndOf="@id/texvTopRated"
-                app:layout_constraintTop_toBottomOf="@id/recylerView1"
-                app:layout_constraintEnd_toEndOf="@id/recylerView1"
-                android:text="See all"
-                android:textColor="#51B0ED"
-                app:layout_constraintHorizontal_bias=".96"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="See all"
+                android:textAlignment="center"
+                android:textColor="#51B0ED"
+                app:layout_constraintEnd_toEndOf="@id/recylerView1"
+                app:layout_constraintHorizontal_bias=".96"
+                app:layout_constraintStart_toEndOf="@id/texvTopRated"
+                app:layout_constraintTop_toBottomOf="@id/recylerView1">
 
             </TextView>
 
 
             <androidx.recyclerview.widget.RecyclerView
-                app:layout_constraintHorizontal_bias=".01"
                 android:id="@+id/recylerView2"
-                app:layout_constraintTop_toBottomOf="@id/texvTopRated"
-                app:layout_constraintStart_toStartOf="@id/texvTopRated"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_bias=".01"
+                app:layout_constraintStart_toStartOf="@id/texvTopRated"
+                app:layout_constraintTop_toBottomOf="@id/texvTopRated">
 
             </androidx.recyclerview.widget.RecyclerView>
 
             <TextView
                 android:id="@+id/NewsetTvID"
-                app:layout_constraintStart_toStartOf="@id/recylerView2"
-                app:layout_constraintTop_toBottomOf="@id/recylerView2"
-                app:layout_constraintEnd_toEndOf="@id/recylerView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Newset"
+                android:textAlignment="viewStart"
                 android:textFontWeight="700"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="@id/recylerView2"
                 app:layout_constraintHorizontal_bias=".01"
-                >
+                app:layout_constraintStart_toStartOf="@id/recylerView2"
+                app:layout_constraintTop_toBottomOf="@id/recylerView2">
 
             </TextView>
 
 
             <TextView
                 android:id="@+id/seealtextvID2"
-                android:gravity="center"
-                android:textAlignment="center"
-                app:layout_constraintStart_toEndOf="@id/NewsetTvID"
-                app:layout_constraintTop_toBottomOf="@id/recylerView2"
-                app:layout_constraintEnd_toEndOf="@id/recylerView2"
-                android:text="See all"
-                android:textColor="#51B0ED"
-                app:layout_constraintHorizontal_bias=".96"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="See all"
+                android:textAlignment="center"
+                android:textColor="#51B0ED"
+                app:layout_constraintEnd_toEndOf="@id/recylerView2"
+                app:layout_constraintHorizontal_bias=".96"
+                app:layout_constraintStart_toEndOf="@id/NewsetTvID"
+                app:layout_constraintTop_toBottomOf="@id/recylerView2">
 
             </TextView>
 
             <androidx.recyclerview.widget.RecyclerView
-                app:layout_constraintHorizontal_bias=".01"
                 android:id="@+id/recylerView3"
-                app:layout_constraintTop_toBottomOf="@id/NewsetTvID"
-                app:layout_constraintStart_toStartOf="@id/NewsetTvID"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_bias=".01"
+                app:layout_constraintStart_toStartOf="@id/NewsetTvID"
+                app:layout_constraintTop_toBottomOf="@id/NewsetTvID">
 
             </androidx.recyclerview.widget.RecyclerView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 
     </ScrollView>
