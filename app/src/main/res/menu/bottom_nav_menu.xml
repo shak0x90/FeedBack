@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_explore"
+
+        android:icon="@drawable/exploreicon"
+        android:title="Explore" >
+
+    </item>
+
+    <item
+        android:id="@+id/navigation_Favorites"
+        android:icon="@drawable/favicon"
+        android:title="Favourites" />
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/ordersicon"
+        android:title="Orders" />
+    <item
+        android:id="@+id/Nav_accountss"
+
+        android:icon="@drawable/profileicon"
+        android:title="Accounts" />
+
+</menu>

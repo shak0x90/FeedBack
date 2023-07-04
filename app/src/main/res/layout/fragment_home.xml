@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.home.HomeFragment">
+
+
+
+
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+
+            app:strokeWidth="1dp"
+            android:id="@+id/imageprofile"
+            android:scaleType="fitXY"
+            android:src="@drawable/ematestimg"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="260dp" />
+
+    <ImageButton
+
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+
+        android:background="#00000000"
+        android:src="@drawable/cameralogo"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="@id/imageprofile">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/nametextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textFontWeight="700"
+        android:textColor="@color/blackheadingtext"
+        android:text="Jenny Wilson"
+        android:textSize="30sp"
+        >
+
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carvid1"
+        app:layout_constraintTop_toBottomOf="@id/nametextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        app:cardCornerRadius="12dp"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+               android:layout_marginLeft="11dp"
+                android:layout_width="15.25dp"
+                android:layout_height="15.09dp"
+                android:src="@drawable/star"
+                >
+            </androidx.appcompat.widget.AppCompatImageView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textAlignment="center"
+                android:layout_marginLeft="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.6"
+                android:textColor="@color/blackheadingtext"
+                android:textSize="16sp"
+                >
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/profilimgId"
+        app:layout_constraintTop_toBottomOf="@id/carvid1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/profileicon"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        android:id="@+id/profiletvid"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/carvid1"
+        app:layout_constraintStart_toEndOf="@id/profilimgId"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blackheadingtext"
+        android:textSize="16sp"
+        android:text="Profile"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/ordershistoryImg"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/profilimgId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/orderhistory"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/profilimgId"
+        app:layout_constraintStart_toStartOf="@id/profiletvid"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blackheadingtext"
+        android:text="Order history"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/changelanguageimg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ordershistoryImg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/swap"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/ordershistoryImg"
+        app:layout_constraintStart_toStartOf="@id/profiletvid"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/blackheadingtext"
+        android:layout_marginTop="20dp"
+        android:text="Change Language"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/changePasswordimg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/changelanguageimg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/lock"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/changelanguageimg"
+        app:layout_constraintStart_toStartOf="@id/profiletvid"
+
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="Change Password"
+        android:textColor="@color/blackheadingtext"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/ReportIssueimg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/changePasswordimg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/info_circle"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/changePasswordimg"
+        app:layout_constraintStart_toStartOf="@id/profiletvid"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="Report an Issue"
+        android:textColor="@color/blackheadingtext"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/logoutimgid"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ReportIssueimg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/download"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/ReportIssueimg"
+        app:layout_constraintStart_toStartOf="@id/profiletvid"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="Log Out"
+        android:textColor="@color/blackheadingtext"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

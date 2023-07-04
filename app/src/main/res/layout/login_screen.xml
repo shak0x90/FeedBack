@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginRight="35dp"
+        android:text="English"
+        android:textSize="14sp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/swap"
+        android:background="@drawable/roundercorners"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/logintvid"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="96dp"
+    android:text="Log In"
+    android:textSize="32sp"
+    android:textFontWeight="700"
+    android:textStyle="bold"
+    android:textColor="@color/blackheadingtext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subheadertxtid"
+        app:layout_constraintTop_toBottomOf="@id/logintvid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="To continue, first verify that it’s you"
+        android:textSize="16sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phonetxtv"
+        app:layout_constraintTop_toBottomOf="@id/subheadertxtid"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Phone number"
+        android:textSize="14sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phonnoEditTxtid"
+        app:layout_constraintTop_toBottomOf="@id/phonetxtv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="      05XXXXXXXXXXX"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextshapeloginsc"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paasswtxttv"
+        app:layout_constraintTop_toBottomOf="@id/phonnoEditTxtid"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="14sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/paswordEditext"
+        app:layout_constraintTop_toBottomOf="@id/paasswtxttv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="      ******************"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextshapeloginsc"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        app:layout_constraintTop_toTopOf="@id/paswordEditext"
+        app:layout_constraintEnd_toEndOf="@id/paswordEditext"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:src="@drawable/passhideye"
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/forgotpaasbtn"
+        app:layout_constraintTop_toBottomOf="@id/paswordEditext"
+        app:layout_constraintEnd_toEndOf="@id/paswordEditext"
+        android:text="Forgot Password?"
+        android:textAllCaps="false"
+        android:background="@color/trans"
+        android:textFontWeight="700"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logintbtn"
+        app:layout_constraintTop_toBottomOf="@id/forgotpaasbtn"
+        android:layout_width="match_parent"
+        android:background="@drawable/shapelarg_radious"
+        android:text="log in"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:layout_height="54dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+    <TextView
+        android:id="@+id/guestextTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Browse as Guest"
+        android:textStyle="bold"
+        android:textColor="@color/blackheadingtext"
+        android:textFontWeight="700"
+        android:textSize="18sp"
+
+        app:layout_constraintTop_toBottomOf="@id/logintbtn"
+        app:layout_constraintBottom_toTopOf="@id/donhaveaccTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageButton
+        app:layout_constraintTop_toBottomOf="@+id/logintbtn"
+        app:layout_constraintStart_toEndOf="@id/guestextTv"
+        app:layout_constraintBottom_toTopOf="@id/donhaveaccTv"
+        android:layout_marginLeft="9dp"
+        android:background="@color/trans"
+        android:src="@drawable/arrow___right_3"
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/donhaveaccTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Don’t have an account?"
+
+        android:layout_marginBottom="34dp"
+        android:textColor="#333333"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    <TextView
+        android:id="@+id/registertxtBtn"
+        app:layout_constraintTop_toTopOf="@id/donhaveaccTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toEndOf="@id/donhaveaccTv"
+        android:layout_marginBottom="34dp"
+        android:text="Register"
+        android:background="@color/trans"
+        android:textColor="#6EECC7"
+        android:textFontWeight="700"
+        android:layout_marginLeft="2dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
