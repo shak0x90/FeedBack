@@ -2,11 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_explore"
-
+        android:id="@+id/navigation_dashboard"
         android:icon="@drawable/exploreicon"
         android:title="Explore" >
-
     </item>
 
     <item
@@ -15,11 +13,11 @@
         android:title="Favourites" />
 
     <item
-        android:id="@+id/navigation_orders"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/ordersicon"
         android:title="Orders" />
     <item
-        android:id="@+id/Nav_accountss"
+        android:id="@+id/navigation_explore"
 
         android:icon="@drawable/profileicon"
         android:title="Accounts" />

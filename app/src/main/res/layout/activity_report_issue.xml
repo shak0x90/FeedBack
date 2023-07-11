@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    tools:context=".ReportIssueActivity">
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_marginStart="16dp"
+        android:id="@+id/arrowbtnId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:background="@color/trans"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <TextView
+
+        android:id="@+id/textViewID"
+        android:text="Report An Issue "
+        android:textSize="18sp"
+        android:lineHeight="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/blackheadingtext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewID"
+        android:id="@+id/selectissueTvId"
+        android:layout_width="wrap_content"
+        android:text="Select an issue"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textFontWeight="400"
+        android:textColor="@color/subhadingtext"
+        >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_margin="16dp"
+    android:id="@+id/spinnertinputtxtId"
+    app:layout_constraintTop_toBottomOf="@id/selectissueTvId"
+    android:layout_marginTop="13dp"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/edittexshapeblue"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+<AutoCompleteTextView
+    android:id="@+id/completetextId"
+    android:layout_width="match_parent"
+    android:text="Register For brunch"
+    android:inputType="none"
+    android:background="@color/trans"
+    android:layout_height="match_parent"
+    >
+
+</AutoCompleteTextView>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioparentid"
+        app:layout_constraintStart_toStartOf="@id/spinnertinputtxtId"
+        app:layout_constraintTop_toBottomOf="@id/spinnertinputtxtId"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:text="Service was not good"
+            android:textSize="16sp"
+
+            android:background="@color/trans"
+            android:button="@drawable/radionselector2"
+            android:textColor="@color/blackheadingtext"
+            android:textFontWeight="700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:text="Seller’s behavior was rude"
+            android:textSize="16sp"
+            android:background="@color/trans"
+            android:button="@drawable/radionselector2"
+            android:textColor="@color/blackheadingtext"
+            android:textFontWeight="700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn3"
+            android:text="I have to wait a lot"
+
+            android:background="@color/trans"
+            android:button="@drawable/radionselector2"
+            android:textColor="@color/blackheadingtext"
+            android:textFontWeight="700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn4"
+            android:text="I can’t track my order"
+            android:textSize="16sp"
+
+            android:background="@color/trans"
+            android:button="@drawable/radionselector2"
+            android:textColor="@color/blackheadingtext"
+            android:textFontWeight="700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn5"
+            android:text="Others"
+            android:textSize="16sp"
+
+            android:background="@color/trans"
+            android:checked="true"
+            android:button="@drawable/radionselector2"
+            android:textColor="@color/blackheadingtext"
+            android:textFontWeight="700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:background="@drawable/edittexshapeblue"
+
+            android:text="whrite here in details"
+            android:gravity="top"
+            android:textColor="@color/blackheadingtext"
+            android:textSize="16sp"
+            android:paddingTop="17dp"
+            android:paddingLeft="20dp"
+            android:layout_width="355dp"
+            android:layout_height="134dp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imagebid"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/radioparentid"
+        app:layout_constraintStart_toStartOf="@id/radioparentid"
+        android:src="@drawable/more_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintStart_toEndOf="@id/imagebid"
+        app:layout_constraintTop_toBottomOf="@id/radioparentid"
+        android:layout_width="wrap_content"
+        android:text="Track previous issues"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13dp"
+        android:textColor="@color/greenligt"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ReportIsuueIDContinue"
+        android:layout_width="355dp"
+        android:layout_height="54dp"
+
+        android:background="@drawable/shapelarg_radious"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

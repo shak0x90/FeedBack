@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraphtest"
+    app:startDestination="@id/exploreFragment1">
+
+    <fragment
+        android:id="@+id/exploreFragment1"
+        android:name="com.example.feedback.ExploreFragment1"
+        android:label="fragment_explore1"
+        tools:layout="@layout/fragment_explore1" >
+        <action
+            android:id="@+id/action_exploreFragment1_to_profileFragment1"
+            app:destination="@id/profileFragment1" />
+        <action
+            android:id="@+id/action_exploreFragment1_to_homeFragment1"
+            app:destination="@id/homeFragment1" />
+        <action
+            android:id="@+id/action_exploreFragment1_to_ordersFragment1"
+            app:destination="@id/ordersFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment1"
+        android:name="com.example.feedback.OrdersFragment1"
+        android:label="fragment_orders1"
+        tools:layout="@layout/fragment_orders1" />
+    <fragment
+        android:id="@+id/profileFragment1"
+        android:name="com.example.feedback.ProfileFragment1"
+        android:label="fragment_profile1"
+        tools:layout="@layout/fragment_profile1" />
+    <fragment
+        android:id="@+id/homeFragment1"
+        android:name="com.example.feedback.HomeFragment1"
+        android:label="fragment_home1"
+        tools:layout="@layout/fragment_home1" />
+</navigation>

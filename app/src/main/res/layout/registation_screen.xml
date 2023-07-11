@@ -3,15 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+
+    android:padding="24dp"
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
+
 
 
 
@@ -19,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="35dp"
         android:text="English"
         android:textSize="14sp"
@@ -33,7 +30,7 @@
         android:background="@drawable/roundercorners"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="9dp"
         >
 
     </androidx.appcompat.widget.AppCompatImageButton>
@@ -42,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="40dp"
         android:text="Register"
         android:textSize="32sp"
         android:textFontWeight="700"
@@ -146,6 +143,7 @@
         app:layout_constraintEnd_toEndOf="@id/edittextlanmetv"
         android:layout_marginTop="10dp"
         android:hint="      05XXXXXXXXXXX"
+        android:inputType="phone"
         android:layout_width="355dp"
         android:background="@drawable/edittextshapeloginsc"
         android:layout_height="55dp">
@@ -172,6 +170,7 @@
         app:layout_constraintEnd_toEndOf="@id/edittextlanmetv"
 
         android:layout_marginTop="10dp"
+        android:inputType="textPassword"
         android:hint="      ******************"
         android:layout_width="355dp"
         android:background="@drawable/edittextshapeloginsc"
@@ -200,6 +199,7 @@
 
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
+        android:inputType="textPassword"
         android:hint="      ******************"
         android:layout_width="355dp"
         android:background="@drawable/edittextshapeloginsc"
@@ -224,7 +224,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/emailEdid"
         android:layout_marginTop="10dp"
-
+        android:inputType="textEmailAddress"
         android:hint="abcd@example.com"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailtvID"
@@ -315,6 +315,7 @@
 
 
             <androidx.appcompat.widget.AppCompatTextView
+
         android:id="@+id/AlreadyHaveaCC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -333,24 +334,25 @@
     <TextView
         android:id="@+id/LoginBtn"
         app:layout_constraintTop_toTopOf="@id/AlreadyHaveaCC"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/AlreadyHaveaCC"
 
         app:layout_constraintStart_toEndOf="@id/AlreadyHaveaCC"
-        android:layout_marginBottom="19dp"
+
         android:text="Login"
         android:background="@color/trans"
         android:textColor="#6EECC7"
         android:textFontWeight="700"
         android:layout_marginLeft="2dp"
         android:textSize="14sp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
     </TextView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

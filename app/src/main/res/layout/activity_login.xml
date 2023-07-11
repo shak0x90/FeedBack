@@ -34,7 +34,7 @@
         android:gravity="center"
         android:text="There is no profile yet. You can Log in
 or Register to add create your own profile."
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
@@ -112,50 +112,10 @@ or Register to add create your own profile."
 
     </androidx.appcompat.widget.AppCompatButton>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/usernavid"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/user"
-        >
 
-    </androidx.appcompat.widget.AppCompatImageView>
-    <androidx.appcompat.widget.AppCompatImageView
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/usernavid"
-        app:layout_constraintEnd_toStartOf="@id/testuiud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/serrchnav"
-        android:id="@+id/testd23"
-        >
 
-    </androidx.appcompat.widget.AppCompatImageView>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/testuiud"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/testd23"
-        app:layout_constraintEnd_toStartOf="@id/navuseridtw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/serrchnav"
-        >
 
-    </androidx.appcompat.widget.AppCompatImageView>
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/navuseridtw"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/user"
-        >
-
-    </androidx.appcompat.widget.AppCompatImageView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

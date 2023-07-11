@@ -118,7 +118,7 @@
     </androidx.appcompat.widget.AppCompatEditText>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/regisBtnBottomId"
+        android:id="@+id/otpverifyContunueId"
         android:layout_width="355dp"
         android:layout_height="54dp"
 
